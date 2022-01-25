@@ -24,14 +24,14 @@ function pauseSpeech() {
     document.getElementById(
       "pauseButton"
     ).innerHTML = `Resume<img class="icon-link-small"
-    src="./assets/icons/resumeIcon.svg">`;
+    src="resumeIcon.svg">`;
   } else {
     isSpeaking = true;
     speechSynthesis.resume();
     document.getElementById(
       "pauseButton"
     ).innerHTML = `Pause<img class="icon-link-small"
-    src="./assets/icons/pauseIcon.svg">`;
+    src="pauseIcon.svg">`;
   }
 }
 
